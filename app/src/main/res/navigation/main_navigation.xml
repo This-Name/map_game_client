@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/authentication_fragment">
+    <fragment
+        android:id="@+id/authentication_fragment"
+        android:name="com.project.mapgames.ui.authentication.AuthenticationFragment">
+        <action
+            android:id="@+id/action_authentication_fragment_to_username_fragment"
+            app:destination="@id/username_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/username_fragment"
+        android:name="com.project.mapgames.ui.authentication.UsernameFragment">
+        <action
+            android:id="@+id/action_username_fragment_to_game_fragment"
+            app:destination="@id/main_game_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menu_fragment"
+        android:name="com.project.mapgames.ui.menu.MenuFragment" />
+
+    <fragment
+        android:id="@+id/main_game_fragment"
+        android:name="com.project.mapgames.ui.game.MainGameFragment" />
+    <fragment
+        android:id="@+id/map_game_fragment"
+        android:name="com.project.mapgames.ui.game.MapFragment" />
+    <fragment
+        android:id="@+id/complete_tasks_game_fragment"
+        android:name="com.project.mapgames.ui.game.CompleteTaskFragment" />
+    <action
+        android:id="@+id/action_global_main_game_fragment"
+        app:destination="@id/main_game_fragment" />
+    <action
+        android:id="@+id/action_global_map_game_fragment"
+        app:destination="@id/map_game_fragment" />
+    <action
+        android:id="@+id/action_global_complete_tasks_game_fragment"
+        app:destination="@id/complete_tasks_game_fragment" />
+</navigation>

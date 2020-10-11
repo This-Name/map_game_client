@@ -1,0 +1,71 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/description_task_game"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:singleLine="false"
+        android:text="Медный всадник"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@id/description_num_game"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/description_num_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:text="4/10"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/description_task_game"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/description_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="15dp"
+        android:padding="5dp"
+        android:text="сходи сходи сходи сходи сходи сходи сходи сходи сходи
+сходи сходи сходи сходи сходи сходи сходи сходи сходи сходи "
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/description_task_game" />
+
+    <Button
+        android:id="@+id/start_game_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="70dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/back_button_ground"
+        android:text="Я пришел"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@id/stop_game_button" />
+
+    <Button
+        android:id="@+id/stop_game_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="70dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/back_edit_ground"
+        android:text="Пропустить"
+        android:textColor="#2787F5"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
